@@ -1,0 +1,39 @@
+body{
+    background: #3D1A11;
+    font-family: sans-serif;
+    margin: 0;
+    text-align: center;
+}
+input[type=radio]{
+    display: none;
+}
+#selecaoBolos:checked ~ #menuBebidas, #selecaoBebidas:checked ~ #menuBolos{
+    display: none;
+}
+.botao{
+    z-index: 1;
+    text-align: center;
+    display: block;
+    position: fixed;
+    width: 50vw;
+    font-size: 75%;
+    padding: 4em 0 1em;
+    text-transform: uppercase;
+    color: white;
+    background-color: #563429;
+}
+#labelBebidas{
+    left: 0;
+    bottom: 0;
+}
+#labelBolos{
+    right: 0;
+    bottom: 0;
+}
+.menu{
+    width: 100vw;
+    height: 80vh;
+}
+input:checked + label {
+    background-color: #E4876D;
+}
